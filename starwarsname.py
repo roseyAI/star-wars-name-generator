@@ -13,12 +13,6 @@ lastName = st.text_input("Enter your last name:").lower()
 maidenName = st.text_input("Enter your mother's maiden name:").title()
 cityName = st.text_input("Enter the city you were born:").lower()
 
-# Add a button to clear the fields
-if st.button("Clear Fields"):
-    firstName = ""
-    lastName = ""
-    maidenName = ""
-    cityName = ""
 
 # Add a button to generate the Star Wars name
 if st.button('Generate'):
@@ -28,6 +22,13 @@ if st.button('Generate'):
         last = lastName[:3]
         maiden = maidenName[:2]
         city = cityName[:3]
+
+# Add a button to clear the fields
+if st.button("Clear Fields"):
+    firstName = ""
+    lastName = ""
+    maidenName = ""
+    cityName = ""
 
         # Display the Star Wars name using Streamlit
         st.title(f"Your Star Wars name is: 🌠 {first}{last} {maiden}{city} 🌠")
