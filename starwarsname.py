@@ -13,6 +13,13 @@ lastName = st.text_input("Enter your last name:").lower()
 maidenName = st.text_input("Enter your mother's maiden name:").title()
 cityName = st.text_input("Enter the city you were born:").lower()
 
+# Add a button to clear the fields
+if st.button("Clear Fields"):
+    firstName = ""
+    lastName = ""
+    maidenName = ""
+    cityName = ""
+
 # Add a button to generate the Star Wars name
 if st.button('Generate'):
     # Ensure all inputs are provided before generating the name
