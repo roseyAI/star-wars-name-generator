@@ -27,9 +27,3 @@ if st.button('Generate'):
     else:
         st.write("Please fill in all the fields.")
 
-# Add a button to clear the fields
-if st.button("Clear Fields"):
-    firstName = ""
-    lastName = ""
-    maidenName = ""
-    cityName = ""
