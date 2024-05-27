@@ -30,7 +30,7 @@ if st.button('Generate'):
 
 # Add a button to clear the fields
 if st.button("Clear Fields"):
-    firstName = ""
-    lastName = ""
-    maidenName = ""
-    cityName = ""
+    firstName = st.text_input("Enter your first name:").title()
+    lastName = st.text_input("Enter your last name:").lower()
+    maidenName = st.text_input("Enter your mother's maiden name:").title()
+    cityName = st.text_input("Enter the city you were born:").lower()
