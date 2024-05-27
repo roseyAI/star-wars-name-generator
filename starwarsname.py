@@ -23,14 +23,14 @@ if st.button('Generate'):
         maiden = maidenName[:2]
         city = cityName[:3]
 
+        # Display the Star Wars name using Streamlit
+        st.title(f"Your Star Wars name is: 🌠 {first}{last} {maiden}{city} 🌠")
+    else:
+        st.write("Please fill in all the fields.")
+
 # Add a button to clear the fields
 if st.button("Clear Fields"):
     firstName = ""
     lastName = ""
     maidenName = ""
     cityName = ""
-
-        # Display the Star Wars name using Streamlit
-        st.title(f"Your Star Wars name is: 🌠 {first}{last} {maiden}{city} 🌠")
-    else:
-        st.write("Please fill in all the fields.")
